@@ -54,7 +54,7 @@ function Restaurants() {
     useEffect(() => {
         const getResList = async () => { 
             try {
-                let url = `http://localhost:3000/restaurants?lat=${localStorage.getItem("lat")}&lon=${localStorage.getItem("lon")}&page=${pageNumber}&pageSize=${pageSize}`;
+                let url = `https://restar.onrender.com/restaurants?lat=${localStorage.getItem("lat")}&lon=${localStorage.getItem("lon")}&page=${pageNumber}&pageSize=${pageSize}`;
                 
                 if (filters.minCost || filters.maxCost || filters.rating || filters.countryCode) {
                     url += `&filter=true`;
