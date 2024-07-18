@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
 
+app.use(cors());
+
 const mongoose = require("mongoose");
 
 mongoose.connect("mongodb+srv://mekashreeram:mshreeram@cluster0.t8wf3y7.mongodb.net/zomato_restaurants?retryWrites=true&w=majority&appName=Cluster0", {});
